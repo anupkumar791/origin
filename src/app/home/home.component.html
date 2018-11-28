@@ -1,0 +1,29 @@
+<p>
+  home works!
+</p>
+<a routerLink="review">Back</a>
+
+<table class="table" width="100%">
+  <td>
+    Product Id
+  </td>
+  <td>
+    Manufacturer
+  </td>
+  <td>
+    Product Name
+  </td>
+  <td>
+    Avg Score
+  </td>
+  <td>Actions</td>
+  <tr *ngFor="let review of review">
+      <td>{{review.id}}</td>
+    <td>{{review.product_id}}</td>
+    <td>{{review.manufacturer}}</td>
+    <td>{{review.product_name}}</td>
+    <td>{{review.avg_score}}</td>
+    <td (click)="deleteReviewData(review.id)">DELETE</td>
+    <td (click)="deleteReviewData(review.id)">DELETE</td>
+  </tr>
+</table>

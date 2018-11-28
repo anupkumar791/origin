@@ -1,0 +1,12 @@
+<a routerLink="">Back</a>
+<h2>Add Review</h2>
+<table width="100%">
+<form id="formreview" name="formreview" #reviewData="ngForm" (ngSubmit)="addReviewData(reviewData.value)">
+  <label>Product Id</label><input type="text" name="product_id" placeholder="Product id" ngModel><br>
+  <label>Manufacturer</label><input type="text" name="manufacturer" placeholder="Manufacturer" ngModel><br>
+  <label>Product Name</label><input type="text" name="product_name" placeholder="Product Name" ngModel><br>
+  <label>Avg Score</label><input type="text" name="avg_score" placeholder="Avg Score" ngModel>
+  <input type="submit" value="Add Review" class="addReview">
+
+</form>
+</table>
